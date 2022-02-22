@@ -11,9 +11,7 @@ document.getElementById("btn2").onclick = function(){
     console.log("log");
 }
 
-let myname = "Yash";
-myname = myname.toUpperCase();
-console.log(myname);
+
 
 
 
