@@ -106,17 +106,15 @@
 //     });
 // }
 
- {
-     let startDate  = new Date(1945, 0 , 01);
-     let newDate = new Date();
-     let oneDay = 1000 * 60 * 60 * 24 ; 
-     let days = (newDate - startDate)/ oneDay;
-     console.log(days);
+//  {
+//      let startDate  = new Date(1945, 0 , 01);
+//      let newDate = new Date();
+//      let oneDay = 1000 * 60 * 60 * 24 ; 
+//      let days = (newDate - startDate)/ oneDay;
+//      console.log(days);
 
- }
+//  }
 
-
- 
 
 // // while loop 
 // {
