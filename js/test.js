@@ -117,20 +117,19 @@
 
 
  // function 
- {
-     function square (x){
-         return x * x ;     
-        }
+//  {
+//      function square (x){
+//          x = {};
+//          x.name = "Yash";
+//         }
 
-        let a = 5;
-        console.log(square(a));
- }
+//         let me = { name : "Priscilla"};
+//         square (me);
+//         console.log(me.name);
+        
+//  }
 
  
-
-
- 
-
 // // while loop 
 // {
 //     let i = 0;
@@ -147,3 +146,19 @@
 
 //     } while(password.toLowerCase() !== "let me in" );
 // }  
+
+
+//power function 
+{
+    {
+        function power ( x , y);
+        let total = 1;
+        for ( i=0; i < y ; i++){
+            total *= x;
+    
+        } 
+        return total;
+    }
+    
+    console.log(power(3, 3));
+}
