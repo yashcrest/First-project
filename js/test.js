@@ -106,14 +106,27 @@
 //     });
 // }
 
- {
-     let startDate  = new Date(1945, 0 , 01);
-     let newDate = new Date();
-     let oneDay = 1000 * 60 * 60 * 24 ; 
-     let days = (newDate - startDate)/ oneDay;
-     console.log(days);
+//  {
+//      let startDate  = new Date(1945, 0 , 01);
+//      let newDate = new Date();
+//      let oneDay = 1000 * 60 * 60 * 24 ; 
+//      let days = (newDate - startDate)/ oneDay;
+//      console.log(days);
 
+//  }
+
+
+ // function 
+ {
+     function square (x){
+         return x * x ;     
+        }
+
+        let a = 5;
+        console.log(square(a));
  }
+
+ 
 
 
  
