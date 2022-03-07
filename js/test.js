@@ -132,3 +132,39 @@
 
 //     } while(password.toLowerCase() !== "let me in" );
 // }  
+
+// {
+//     function func (x){
+//         x.name = "sally";
+//     }
+//     let me = { name: "Yash"}
+//     func(me);
+//     console.log(me.name);
+// }
+
+// call back function 
+// {
+//     function f (x){
+//         return x();
+//     }
+//     let myFunc = () => 5 * 5 ;
+//    let a =  f (myFunc);
+//    console.log(a);
+// }
+
+{
+    pow.calculated = [];
+    function pow (x,y){
+        let total = 1;
+        for ( i = 0; i < y; i++){
+            total *= x;
+        }
+        pow.calculated.push(total);
+        console.log(pow.calculated);
+        return total;
+    }
+    pow(5,5);
+    pow(5,5);
+} 
+
+
