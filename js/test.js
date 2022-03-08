@@ -116,6 +116,20 @@
 //  }
 
 
+ // function 
+//  {
+//      function square (x){
+//          x = {};
+//          x.name = "Yash";
+//         }
+
+//         let me = { name : "Priscilla"};
+//         square (me);
+//         console.log(me.name);
+        
+//  }
+
+ 
 // // while loop 
 // {
 //     let i = 0;
@@ -133,39 +147,18 @@
 //     } while(password.toLowerCase() !== "let me in" );
 // }  
 
+
+//power function 
 // {
-//     function func (x){
-//         x.name = "sally";
+//     {
+//         function power ( x , y);
+//         let total = 1;
+//         for ( i=0; i < y ; i++){
+//             total *= x;
+    
+//         } 
 //     }
-//     let me = { name: "Yash"}
-//     func(me);
-//     console.log(me.name);
+    
+//     console.log(power(3, 3));
 // }
-
-// call back function 
-// {
-//     function f (x){
-//         return x();
-//     }
-//     let myFunc = () => 5 * 5 ;
-//    let a =  f (myFunc);
-//    console.log(a);
-// }
-
-{
-    pow.calculated = [];
-    function pow (x,y){
-        let total = 1;
-        for ( i = 0; i < y; i++){
-            total *= x;
-        }
-        pow.calculated.push(total);
-        console.log(pow.calculated);
-        return total;
-    }
-    pow(5,5);
-    pow(5,5);
-} 
-
-
-
+ 
