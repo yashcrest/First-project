@@ -144,7 +144,7 @@
 //     do{
 //         password = prompt("What is the passcode? ");
 
-//     } while(password.toLowerCase() !== "let me in" );
+//     } while(password.toLowerCase() !== "let me in");
 // }  
 
 
@@ -162,3 +162,74 @@
 //     console.log(power(3, 3));
 // }
  
+
+// function as first class citizen
+
+// {
+    // function pow (x , y){
+    //     let total = 1; 
+    //     for (let i= 0; i < y ; i++){
+    //         total *= x; 
+    //     }
+    //     return total;
+    // } 
+//     let coolFunctions = [pow];
+
+//     let MathFunctions = { //fucntion to an object as a property 
+
+//         power : pow, 
+//     };
+
+//     console.log(MathFunctions.power (3,3));
+//     pow.description = "Will riase numbers to a power"; //properties of a function
+//     console.log(pow.description);
+
+//     // call back function
+//     function callBackExample (){
+//         return pow ;
+//     }
+    
+//     console.log(callBackExample()(10,3));
+
+
+// }
+
+//Memoization
+{
+    pow.calculated ={};
+    function pow (x , y){
+        let stringVersion = x + "^" + y;
+        console.log("String version: " + stringVersion);
+
+        if ( stringVersion in pow.calculated){
+            console.log("found!");
+            return pow.calculated[stringVersion];
+        }
+        console.log("Calculating!");
+        let total = 1; 
+        for (let i= 0; i < y ; i++){
+            total *= x; 
+        }
+        pow.calculated[stringVersion] = total;
+        console.log(pow.calculated);
+        return total;
+    } 
+    pow(3,3);
+    pow(3,3);
+    pow ( 3 ,4);
+    pow (5,6);
+}
+
+
+//default and Rest Parameteres
+
+{
+    function pow (x , y){
+        let total = 1; 
+        for (let i= 0; i < y ; i++){
+            total *= x; 
+        }
+        return total;
+    }  
+}
+
