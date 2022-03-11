@@ -116,6 +116,20 @@
 //  }
 
 
+ // function 
+//  {
+//      function square (x){
+//          x = {};
+//          x.name = "Yash";
+//         }
+
+//         let me = { name : "Priscilla"};
+//         square (me);
+//         console.log(me.name);
+        
+//  }
+
+ 
 // // while loop 
 // {
 //     let i = 0;
@@ -130,39 +144,92 @@
 //     do{
 //         password = prompt("What is the passcode? ");
 
-//     } while(password.toLowerCase() !== "let me in" );
+//     } while(password.toLowerCase() !== "let me in");
 // }  
 
+
+//power function 
 // {
-//     function func (x){
-//         x.name = "sally";
+//     {
+//         function power ( x , y);
+//         let total = 1;
+//         for ( i=0; i < y ; i++){
+//             total *= x;
+    
+//         } 
 //     }
-//     let me = { name: "Yash"}
-//     func(me);
-//     console.log(me.name);
+    
+//     console.log(power(3, 3));
+// }
+ 
+
+// function as first class citizen
+
+// {
+    // function pow (x , y){
+    //     let total = 1; 
+    //     for (let i= 0; i < y ; i++){
+    //         total *= x; 
+    //     }
+    //     return total;
+    // } 
+//     let coolFunctions = [pow];
+
+//     let MathFunctions = { //fucntion to an object as a property 
+
+//         power : pow, 
+//     };
+
+//     console.log(MathFunctions.power (3,3));
+//     pow.description = "Will riase numbers to a power"; //properties of a function
+//     console.log(pow.description);
+
+//     // call back function
+//     function callBackExample (){
+//         return pow ;
+//     }
+    
+//     console.log(callBackExample()(10,3));
+
+
 // }
 
-// call back function 
-// {
-//     function f (x){
-//         return x();
-//     }
-//     let myFunc = () => 5 * 5 ;
-//    let a =  f (myFunc);
-//    console.log(a);
-// }
-
+//Memoization
 {
-    pow.calculated = [];
-    function pow (x,y){
-        let total = 1;
-        for ( i = 0; i < y; i++){
-            total *= x;
+    pow.calculated ={};
+    function pow (x , y){
+        let stringVersion = x + "^" + y;
+        console.log("String version: " + stringVersion);
+
+        if ( stringVersion in pow.calculated){
+            console.log("found!");
+            return pow.calculated[stringVersion];
         }
-        pow.calculated.push(total);
+        console.log("Calculating!");
+        let total = 1; 
+        for (let i= 0; i < y ; i++){
+            total *= x; 
+        }
+        pow.calculated[stringVersion] = total;
         console.log(pow.calculated);
         return total;
+
     }
     pow(5,5);
     pow(5,5);
 } 
+
+
+//default and Rest Parameteres
+
+{
+    function pow (x , y){
+        let total = 1; 
+        for (let i= 0; i < y ; i++){
+            total *= x; 
+        }
+        return total;
+    }  
+}
+
+
